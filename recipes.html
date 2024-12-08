@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipe Carousel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f0f0f0; 
+      background-image: url('file:///Users/rownielyumul/Desktop/9T/ICT/2nd%20QTR/Q2_Project/ict.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .navbar {
+      padding-top: 5px; 
+      padding-bottom: 5px;
+    }
+
+    .navbar .nav-link {
+      color: darkred;
+    }
+
+    .navbar .nav-link:hover {
+      color: #f8f9fa;
+    }
+
+    .navbar .btn {
+      background-color: #f8f9fa;
+      color: lightcoral;
+    }
+
+    .navbar .btn:hover {
+      background-color: coral;
+      color: white;
+    }
+
+    .form-control {
+      width: 250px;
+    }
+
+    .carousel {
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .carousel-item {
+      padding: 20px 0;
+    }
+
+    .carousel-img {
+      max-width: 50%;
+      max-height: 50%;
+      margin: 0 auto;
+      display: block;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .carousel-table {
+      max-width: 700px;
+      margin: 90px auto 0;
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel-table th {
+      background-color: #28a745;
+      color: white;
+      text-align: center;
+    }
+
+    .carousel-table td {
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+      background-color: lightcoral;
+      border-radius: 50%; 
+      width: 50px; 
+      height: 50px;
+    }
+    .carousel-img {
+    width: 25%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  </style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-info fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand">
+      <img src="file:///Users/rownielyumul/Desktop/9T/ICT/2nd%20QTR/Q2_Project/logo.jpg" alt="Logo" class="img-fluid rounded-circle" style="width: 70px; height: 70px; object-fit: cover;">
+    </a>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
+        <li class="nav-item"><a class="nav-link" href="submit.html">Submit a recipe</a></li>
+      </ul>
+
+      <form class="d-flex">
+        <input class="form-control" type="text" placeholder="Search...">
+        <button type="submit" class="btn">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="file:///Users/rownielyumul/Desktop/9T/ICT/2nd%20QTR/Q2_Project/ict%20empa.png" class="carousel-img" alt="Empanada">
+      <div class="carousel-table">
+        <table class="table">
+          <thead>
+            <tr>
+              <th colspan="2">Ilocos Empanada</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Ingredients</td><td>1 cup of water || ½ tsp of atsuete powder || 1½ cups of rice flour || Oil (for frying) || 3 cloves of minced garlic|| 1 chopped white onion || 6 pcs of Ilocos longganisa (removed from the casing) || Pepper || Knorr liquid seasoning || 1 unripe grated green papaya || 6 raw eggs</td></tr>
+
+            <tr><td>Process</td><td>To make the dough, boil water, atsuete powder, and rice flour until reddish. Stir into dough, then knead, divide into six equal parts, form balls, and set aside for filling. To make the longganisa, heat oil, sauté garlic and onions, add longganisa, break sausage into minced meat, season with pepper and Knorr Liquid Seasoning then set aside. Now to assemble the empanada. Arrange longganisa, papaya, and eggs in separate bowls. Heat oil in a pan for deep-frying empanadas. Flatten dough into a circle, fill with longganisa, papaya, and egg, fold into a semi-circle, seal edges, and fry until crisp. Drain and serve with sukang Ilocos.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="file:///Users/rownielyumul/Desktop/9T/ICT/2nd%20QTR/Q2_Project/ict2.png" class="carousel-img" alt="Bibingka">
+      <div class="carousel-table">
+        <table class="table">
+          <thead>
+            <tr>
+              <th colspan="2">Royal Bibingka</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Ingredients</td><td>1½ cup glutinous rice flour || 6 tablespoons sweet rice flour (Mochico) || 2 cups coconut milk || 1 cup sugar || 1/3 cup evaporated milk || ½ cup margarine (softened) || 3/4 cup shredded cheddar cheese || 4 egg yolks || 1 egg</td></tr>
+            <tr><td>Process</td><td>Preheat oven to 350F. Mix glutinous rice flour, sweet rice flour, and sugar. Beat eggs, evaporated milk, and coconut milk. Add rice flour mixture to wet ingredients. Pour mixture into aluminum molds, cover with foil, bake 18 minutes, then brush with margarine, sprinkle cheese, bake 22 minutes, and broil 8 minutes.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="file:///Users/rownielyumul/Desktop/9T/ICT/2nd%20QTR/Q2_Project/ict3.png" class="carousel-img" alt="Bagnet">
+      <div class="carousel-table">
+        <table class="table">
+          <thead>
+            <tr>
+              <th colspan="2">Bagnet</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Ingredients</td><td>2 to 2 1/2 lbs. whole pork belly || 1 medium red onion || 1 tablespoon whole black peppercorn || 1 1/2 tablespoons salt || 6 cloves crushed garlic || 4 to 6 cups water || 3 cups cooking oil</td></tr>
+            <tr><td>Process</td><td>to prepare a delicious pork belly, start by boiling it in water with garlic, onion, salt, and black peppercorn. After simmering, remove the pork belly and rub it with salt for 10-20 minutes. Heat cooking oil and deep-fry the pork belly until golden brown and crispy. Remove the pork belly, cool, and repeat the process for 5-10 minutes. Remove the pork belly and absorb excess oil. Serve the pork belly with bagoong monamon or guinamos, and add lemon or calamansi for a more flavorful dish.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="file:///Users/rownielyumul/Desktop/9T/ICT/2nd%20QTR/Q2_Project/ict%204.png" class="carousel-img" alt="Dinakdakan">
+      <div class="carousel-table">
+        <table class="table">
+          <thead>
+            <tr>
+              <th colspan="2">Dinakdakan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Ingredients</td><td>2 lbs. liempo pork belly || ½ cup Lady’s Choice Mayonnaise || 3 tablespoons Knorr Liquid Seasoning || 2 to 3 pieces lime or 5 to 6 pieces calamansi || 2 pieces red onion (sliced into thin pieces) || 10 pieces Thai chili peppers (chopped) || 3 pieces long green pepper (sliced) || 1 teaspoon onion powder (optional) || Salt and ground black pepper to taste || 1 ½ quarts water</td></tr>
+            <tr><td>Process</td><td>Boil water and add pork belly to a pot. Let it cool and rub salt and pepper over it. Grill each side for 6 minutes. Slice the pork belly into thin pieces and prepare a dressing. Toss onion and chili peppers with the pork belly, add the dressing, and season with salt and pepper to taste. Repeat this process to prevent burntness.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#recipeCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+ 
